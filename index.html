@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Services</title>
+</head>
+<link rel="stylesheet" href="./css/index.css">
+
+<body>
+    <div class="main">
+        <div class="first">
+            <h1 class="headings">Get Any Service at Your Door </h1>
+            <!-- <h1 class="headings">Welcome To Home Service</h1> -->
+            <p class="ptext">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At cum accusamus voluptatibus aspernatur. Cum,
+                voluptatem sint modi unde facere sequi!
+            </p>
+            <a href="select city.html" id="get">Get Started → </a>
+            <p class="ptext center">If you want to join as worker click on below button</p>
+            <a href="https://surveyheart.com/form/632d68ca4edd613feddaa1d6" id="get1">For join as worker</a>
+            <!-- <form   action=""> <input type="button" value="Get In"></form>        if use btn-->
+        </div>
+        <!-- <div class="sec"> -->
+            <!-- here i have attached an img as bg so made a div  -->
+
+            <!-- <img src="../img/photo_2022-09-10_20-32-18.jpg" alt="This is Loremleroc canjcckasnlsajc  image" class="img" > -->
+        <!-- </div> -->
+
+
+<script>
+    var i=0;
+    var j=0;
+    function divchange()
+    {
+        var divtag=document.getElementById("get");
+        var bgcolor= ["blue","white"];
+        var txtcolor= ["white","purple"]
+        divtag.style.backgroundColor=bgcolor[i];
+        divtag.style.color=txtcolor[j];
+        i=(i+1)%bgcolor.length;
+        j=(j+1)%txtcolor.length;
+    }
+    setInterval(divchange,500);
+    var p=0;
+    var q=0;
+    function divchange1()
+    {
+        var divtag=document.getElementById("get1");
+        var bgcolor= ["white","blue"];
+        var txtcolor= ["purple","white"]
+        divtag.style.backgroundColor=bgcolor[i];
+        divtag.style.color=txtcolor[j];
+        p=(p+1)%bgcolor.length;
+        q=(q+1)%txtcolor.length;
+    }
+    setInterval(divchange1,500);
+</script>        
+</body>
+</html>
